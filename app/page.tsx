@@ -16,11 +16,11 @@ export default function Home() {
         <div className="rounded-3xl border border-white/10 bg-white/5 p-8 md:p-12">
           <p className="text-sm tracking-widest text-white/60">LORE OFFICIEL</p>
 
-          <h1 className="mt-3 text-4xl font-bold md:text-6xl">The Last Night</h1>
+          <h1 className="mt-3 text-4xl font-bold md:text-6xl">LUMEN : Après La Nuit</h1>
 
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/70 md:text-lg">
             Histoire, personnages et lieux — tout ce qu’il faut pour comprendre
-            The Last Night.
+            LUMEN : Après La Nuit.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -111,7 +111,7 @@ export default function Home() {
 
 
         <p className="mt-10 text-center text-xs text-white/50">
-          The Last Night — Lore Hub
+          LUMEN : Après La Nuit — Lore Hub
         </p>
       </section>
     </motion.main>

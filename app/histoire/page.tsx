@@ -5,7 +5,7 @@ export default function Page() {
       <header className="mb-10">
         <h1 className="text-4xl font-bold">Histoire</h1>
         <p className="mt-3 max-w-2xl text-white/70 leading-relaxed">
-          L’histoire de The Last Night raconte un monde qui a refusé la fin,
+          L’histoire de LUMEN : Après La Nuit raconte un monde qui a refusé la fin,
           et les conséquences de ce choix.
         </p>
       </header>

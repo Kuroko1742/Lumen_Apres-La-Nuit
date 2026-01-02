@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="flex items-center justify-between px-6 py-4">
         {/* Logo / Titre */}
         <Link href="/" className="text-lg font-semibold text-white">
-          The Last Night
+          LUMEN : Après La Nuit
         </Link>
 
         {/* Navigation */}
