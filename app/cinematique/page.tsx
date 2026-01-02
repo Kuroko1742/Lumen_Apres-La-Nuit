@@ -13,7 +13,7 @@ export default function Page() {
       <section className="mx-auto max-w-5xl">
         <h1 className="text-4xl font-bold">Cinématique</h1>
         <p className="mt-3 max-w-2xl text-white/70 leading-relaxed">
-          Cette page accueillera la bande-annonce officielle de The Last Night.
+          Cette page accueillera la bande-annonce officielle de LUMEN : Après La Nuit.
           Elle présente l’univers, l’ambiance et les enjeux du jeu.
           La vidéo apparaîtra ici dès qu’elle sera finalisée.
         </p>

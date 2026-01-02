@@ -20,23 +20,27 @@ const lieux: Lieu[] = [
     subtitle: "La Ville sans Nuit",
     image: "/lieux/soul city.jpg",
     paragraphs: [
-      "Astrae est une mégapole en surpopulation, bâtie autour d’une lumière artificielle permanente.",
-      "Depuis la disparition de la nuit, elle n’a jamais cessé de briller : le jour y est éternel, les rues ne dorment jamais.",
-      "La densité étouffe, la surveillance est constante, et l’Ordre maintient une paix fragile en contrôlant le récit officiel.",
-      "Ici, la lumière rassure… mais elle cache ce qu’elle a remplacé.",
+      "Astrae est une ville dense et saturée, construite autour d’une lumière artificielle censée ne jamais faiblir.",
+      "Pourtant, contrairement aux autres cités, le ciel y est rarement dégagé. Les nuages s’accumulent, la pluie est fréquente, et la lumière peine parfois à percer.",
+      "Cette anomalie a forgé la réputation d’Astrae : on la surnomme la ville maudite, celle où la clarté semble lutter pour s’imposer.",
+      "Des rumeurs persistent. Certains affirment que le Cœur serait dissimulé sous la ville, et que la Nox, encore vivante, tenterait d’en fissurer l’emprise, attirant nuages et tempêtes dans son sillage.",
     ],
+
   },
   {
     id: "kryos",
     emoji: "🏚️",
     name: "Kryos",
     subtitle: "Les Ruines de la Chute",
-    image: "/lieux/ruine1.jpg",
+    image: "/lieux/ruine2.jpg",
     paragraphs: [
-      "Kryos est un site interdit, brisé et instable, situé loin de l’influence directe d’Astrae.",
-      "Les archives officielles parlent d’un effondrement ancien.",
-      "En réalité, c’est ici que la lumière fut forcée pour la première fois… et que l’équilibre se fissura.",
+      "Kryos se présente comme une grotte parmi tant d’autres, dissimulée loin des routes et des regards.",
+      "Pourtant, Keel n’y arrive pas par hasard. Quelque chose l’y attire, comme un appel silencieux guidé par la Nox.",
+      "Les parois portent les traces d’anciens passages, d’échos laissés par ceux qui l’ont précédé : d’anciens porteurs, venus ici chercher une force qu’ils ne comprenaient pas encore.",
+      "À Kryos, la présence de la Nox est plus dense. Ceux qui survivent à ce lieu en ressortent changés, capables d’accéder à un pouvoir bien supérieur.",
+      "C’est aussi l’un des rares endroits relativement sûrs, situé à proximité de Nerha, comme si ces lieux étaient liés depuis bien avant l’activation du Cœur.",
     ],
+
   },
   {
     id: "lyrn",
@@ -45,10 +49,12 @@ const lieux: Lieu[] = [
     subtitle: "La Forêt qui Observe",
     image: "/lieux/foret.jpg",
     paragraphs: [
-      "Lyrn est une forêt dense et silencieuse, épargnée par l’expansion d’Astrae.",
-      "La lumière y pénètre difficilement, filtrée par la canopée et la brume.",
-      "Sous ses racines reposent des vestiges que la nature semble vouloir protéger… ou dissimuler.",
+      "Lyrn est une forêt dense et sombre, dont les arbres au feuillage immense masquent presque entièrement le ciel.",
+      "La lumière y est absorbée par la canopée et la brume, plongeant la majorité de la forêt dans une pénombre permanente.",
+      "Seul le chemin principal demeure éclairé, maintenu par de puissantes forces chargées d’en préserver l’accès.",
+      "Au cœur de cette obscurité, Lyrn dissimule Nerha, protégée par la forêt elle-même comme un voile vivant.",
     ],
+
   },
   {
     id: "nerha",
@@ -57,10 +63,12 @@ const lieux: Lieu[] = [
     subtitle: "Le Sanctuaire du Cœur",
     image: "/lieux/temple.jpg",
     paragraphs: [
-      "Nerha est un sanctuaire isolé, dissimulé au plus profond de Lyrn.",
-      "En son centre repose le Cœur, source du monde figé dans la lumière.",
-      "L’Ordre y a concentré ses forces pour préserver ce qui ne doit jamais être remis en question.",
+      "Nerha est avant tout une légende. Un nom murmuré, jamais confirmé.",
+      "Toute personne encore en vie rêve d’y parvenir, animée par une seule conviction : protéger le Cœur.",
+      "Pourtant, personne n’a jamais affirmé avoir vu Nerha de ses propres yeux.",
+      "Ceux qui prétendent s’en être approchés ne sont jamais revenus, laissant derrière eux le doute… et le silence.",
     ],
+
   },
 ];
 
