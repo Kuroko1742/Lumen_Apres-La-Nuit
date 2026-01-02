@@ -10,129 +10,53 @@ export default function Page() {
         </p>
       </header>
 
-      {/* I — Le Monde */}
-      <section className="mb-10 space-y-4">
-        <h2 className="text-2xl font-semibold">Au commencement</h2>
-        <p className="text-white/70 leading-relaxed">
-          Avant les royaumes, avant les dieux, le monde reposait sur un cycle
-          naturel. Deux forces primordiales le maintenaient en équilibre :
-          la Lumière Originelle et la Nox.
-        </p>
-        <p className="text-white/70 leading-relaxed">
-          La Lumière donnait naissance et continuité. La Nox offrait le repos,
-          l’oubli et la fin. Elles n’étaient pas ennemies. Ensemble, elles
-          permettaient au monde d’évoluer.
-        </p>
-        <p className="text-white/70 leading-relaxed">
-          La nuit n’était pas une menace. Elle était une nécessité.
-        </p>
-      </section>
+      <section className="mt-10 rounded-3xl border border-white/10 bg-white/5 p-6">
+  <p className="text-xs tracking-widest text-white/60">PRÉMISSE</p>
 
-      {/* II — La peur */}
-      <section className="mb-10 space-y-4">
-        <h2 className="text-2xl font-semibold">La peur de l’ombre</h2>
-        <p className="text-white/70 leading-relaxed">
-          Avec le temps, les peuples commencèrent à craindre la nuit.
-          Ils confondirent l’oubli avec l’anéantissement, la fin avec la
-          destruction.
-        </p>
-        <p className="text-white/70 leading-relaxed">
-          De cette peur naquit une certitude dangereuse : un monde sans Nox
-          serait un monde parfait.
-        </p>
-        <p className="text-white/70 leading-relaxed">
-          Ainsi fut fondé l’Ordre de la Clarté, une autorité convaincue que
-          l’équilibre devait être corrigé.
-        </p>
-      </section>
+  <h2 className="mt-3 text-2xl font-semibold text-white">
+    LUMEN : Après la nuit
+  </h2>
 
-      {/* III — Le Cœur */}
-      <section className="mb-10 space-y-4">
-        <h2 className="text-2xl font-semibold">Le Cœur de l’Aube</h2>
-        <p className="text-white/70 leading-relaxed">
-          Après des siècles de recherches interdites, l’Ordre découvrit que
-          la Nox ne pouvait être détruite.
-        </p>
-        <p className="text-white/70 leading-relaxed">
-          Mais elle pouvait être enfermée.
-        </p>
-        <p className="text-white/70 leading-relaxed">
-          Le Cœur de l’Aube fut créé : un cristal vivant, alimenté par des
-          milliers d’âmes, capable de canaliser la Lumière Originelle à une
-          échelle jamais atteinte.
-        </p>
-        <p className="text-white/70 leading-relaxed">
-          Lors de son activation, la Nox fut attirée, fragmentée et emprisonnée.
-          À cet instant précis, l’équilibre du monde fut rompu.
-        </p>
-      </section>
+  <div className="mt-4 space-y-4 text-white/70 leading-relaxed">
+    <p>
+      Dans <span className="font-semibold text-white/85">Lumen : Après la Nuit</span>,
+      vous incarnez <span className="font-semibold text-white/85">Keel</span>,
+      un habitant de <span className="font-semibold text-white/85">Lytheris</span>.
+      Comme tous les siens, il a grandi dans un monde privé de nuit,
+      baigné par une lumière permanente entretenue par le
+      <span className="font-semibold text-white/85"> Cœur de l’Aube</span>.
+    </p>
 
-      {/* IV — Fausse lumière */}
-      <section className="mb-10 space-y-4">
-        <h2 className="text-2xl font-semibold">L’ère de la fausse lumière</h2>
-        <p className="text-white/70 leading-relaxed">
-          Au début, le monde sembla prospérer. Les royaumes cessèrent de tomber.
-          La mort perdit sa finalité.
-        </p>
-        <p className="text-white/70 leading-relaxed">
-          Mais cette stabilité était artificielle. Privé de la Nox, le monde
-          ne pouvait plus évacuer l’excès de Lumière.
-        </p>
-        <p className="text-white/70 leading-relaxed">
-          Les âmes restaient prisonnières, la réalité se déformait, et l’Ordre
-          choisit de dissimuler la vérité plutôt que de reconnaître son erreur.
-        </p>
-      </section>
+    <p>
+      Depuis des générations, on enseigne que cet artefact maintient
+      l’équilibre du monde et protège toute forme de vie.
+      La lumière est devenue une évidence, un pilier sur lequel repose
+      l’ordre établi. Personne ne remet son rôle en question.
+    </p>
 
-      {/* V — Porteurs */}
-      <section className="mb-10 space-y-4">
-        <h2 className="text-2xl font-semibold">Les Porteurs de Nox</h2>
-        <p className="text-white/70 leading-relaxed">
-          Enfermée et affaiblie, la Nox conserva une volonté.
-          Incapable d’agir directement, elle choisit des mortels.
-        </p>
-        <p className="text-white/70 leading-relaxed">
-          Ainsi naquirent les Porteurs de Nox : des êtres capables de résister
-          à la Lumière et d’espérer atteindre le Cœur de l’Aube.
-        </p>
-        <p className="text-white/70 leading-relaxed">
-          Aucun d’entre eux ne réussit. Chaque échec renforça les défenses
-          du sanctuaire.
-        </p>
-      </section>
+    <p>
+      Pourtant, des signes inquiétants commencent à apparaître.
+      Certaines régions deviennent instables, des zones autrefois sûres
+      se dégradent, et des phénomènes inexpliqués se multiplient loin
+      des regards officiels.
+    </p>
 
-      {/* VI — Gardiens */}
-      <section className="mb-10 space-y-4">
-        <h2 className="text-2xl font-semibold">Les Gardiens de la Clarté</h2>
-        <p className="text-white/70 leading-relaxed">
-          Les Gardiens étaient autrefois des membres de l’Ordre.
-          Convaincus que le monde devait être protégé à tout prix,
-          ils restèrent trop longtemps auprès du Cœur.
-        </p>
-        <p className="text-white/70 leading-relaxed">
-          La Lumière les consuma. Leur humanité disparut.
-          Ils devinrent des entités immortelles, vides, entièrement
-          dévouées à la protection de l’artefact.
-        </p>
-      </section>
+    <p>
+      Face à ces troubles, Keel est envoyé vers le Temple,
+      au cœur du dispositif qui protège le Cœur de l’Aube.
+      Sa mission est simple en apparence : défendre l’artefact
+      contre les menaces qui cherchent à l’atteindre.
+    </p>
 
-      {/* VII — Keel */}
-      <section className="space-y-4">
-        <h2 className="text-2xl font-semibold">Keel</h2>
-        <p className="text-white/70 leading-relaxed">
-          Keel est un Porteur de Nox.
-          Il n’est pas le premier.
-          Mais il est le dernier.
-        </p>
-        <p className="text-white/70 leading-relaxed">
-          À travers lui, une vérité oubliée refait surface :
-          la Nox n’est pas la corruption.
-          La Lumière n’est pas la rédemption.
-        </p>
-        <p className="text-white/70 leading-relaxed">
-          Le monde est malade de l’absence de l’Ombre.
-        </p>
-      </section>
-    </main>
+    <p>
+      En parcourant des villes sous surveillance, des ruines anciennes
+      et des territoires oubliés, Keel se retrouve confronté à des
+      fragments d’un passé que le monde semble avoir volontairement effacé.
+      Ce voyage l’oblige à observer, questionner et comprendre
+      ce qui menace réellement l’équilibre qu’il est censé préserver.
+    </p>
+  </div>
+</section>
+</main>
   );
 }
