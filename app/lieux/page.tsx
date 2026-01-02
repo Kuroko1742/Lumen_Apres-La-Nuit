@@ -19,7 +19,7 @@ const lieux: Lieu[] = [
     emoji: "🏙️",
     name: "Astrae",
     subtitle: "La Ville sans Nuit",
-    image: "/lieux/soul_city.jpg",
+    image: "app/lieux/soul city.jpg",
     paragraphs: [
       "Astrae est une métropole bâtie autour d’une lumière artificielle permanente.",
       "Depuis la disparition de la nuit, elle n’a jamais cessé de briller.",
@@ -32,7 +32,7 @@ const lieux: Lieu[] = [
     emoji: "🏚️",
     name: "Kryos",
     subtitle: "Les Ruines de la Chute",
-    image: "/lieux/ruine1.jpg",
+    image: "app/lieux/ruine1.jpg",
     paragraphs: [
       "Kryos est un site interdit, brisé et instable, situé loin de l’influence directe de la ville.",
       "Les archives officielles parlent d’un effondrement ancien.",
@@ -45,7 +45,7 @@ const lieux: Lieu[] = [
     emoji: "🌲",
     name: "Lyrn",
     subtitle: "La Forêt qui Observe",
-    image: "/lieux/foret.jpg",
+    image: "app/lieux/foret.jpg",
     paragraphs: [
       "Lyrn est une forêt dense et silencieuse, épargnée par l’expansion d’Astrae.",
       "La lumière y pénètre difficilement, filtrée par la canopée et la brume.",
@@ -58,7 +58,7 @@ const lieux: Lieu[] = [
     emoji: "⛩️",
     name: "Nerha",
     subtitle: "Le Sanctuaire du Cœur",
-    image: "/lieux/temple.jpg",
+    image: "app/lieux/temple.jpg",
     paragraphs: [
       "Nerha est un sanctuaire isolé, dissimulé au plus profond de Lyrn.",
       "En son centre repose le Cœur, source du monde figé dans la lumière.",
