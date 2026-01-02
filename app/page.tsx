@@ -13,6 +13,12 @@ export default function Home() {
     >
       <section className="mx-auto max-w-5xl">
         {/* Hero */}
+        <img
+         src="/logo.png"
+         alt="LUMEN : Après la nuit"
+         className="mb-6 mx-auto h-32 w-auto opacity-90 transition-transform duration-500 hover:scale-105"
+        />
+
         <div className="rounded-3xl border border-white/10 bg-white/5 p-8 md:p-12">
           <p className="text-sm tracking-widest text-white/60">LORE OFFICIEL</p>
 

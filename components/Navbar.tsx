@@ -19,9 +19,17 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 w-full border-b border-white/10 bg-black/80 backdrop-blur">
       <div className="flex items-center justify-between px-6 py-4">
         {/* Logo / Titre */}
-        <Link href="/" className="text-lg font-semibold text-white">
-          🌑 LUMEN : Après La Nuit
-        </Link>
+        <Link href="/" className="flex items-center gap-3 text-white">
+          <img
+            src="/logo.png"
+            alt="LUMEN : Après la nuit"
+            className="h-8 w-auto transition-transform duration-300 hover:scale-105"
+          />
+          <span className="text-lg font-semibold">
+            LUMEN : Après la nuit
+         </span>
+</Link>
+
 
         {/* Navigation */}
         <div className="flex gap-6 text-sm">
