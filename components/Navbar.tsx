@@ -23,13 +23,14 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-white/10 bg-black/80 backdrop-blur">
-      <div className="flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4">
-        {/* GAUCHE : Logo + Titre (ne déborde jamais sur le burger) */}
+      <div className="flex items-center justify-between px-4 sm:px-6 py-3">
+        
+        {/* GAUCHE : logo + titre (collés à gauche, jamais sur le burger) */}
         <Link href="/" className="flex items-center gap-2 text-white min-w-0">
           <img
             src="/Logo/logo.png"
             alt="LUMEN : Après la nuit"
-            className="h-[18px] md:h-8 w-auto shrink-0 transition-transform duration-300 hover:scale-105"
+            className="navbar-logo shrink-0"
           />
 
           <span className="text-[10px] sm:text-xs md:text-lg font-semibold truncate">
@@ -37,7 +38,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* DESKTOP : liens (inchangé) */}
+        {/* DESKTOP */}
         <div className="hidden md:flex gap-6 text-sm">
           {links.map((link) => {
             const isActive =
@@ -54,7 +55,6 @@ export default function Navbar() {
                 }`}
               >
                 {link.label}
-
                 {isActive && (
                   <motion.span
                     layoutId="navbar-underline"
@@ -66,7 +66,7 @@ export default function Navbar() {
           })}
         </div>
 
-        {/* MOBILE : burger */}
+        {/* MOBILE : menu burger */}
         <button
           onClick={() => setOpen((v) => !v)}
           className="md:hidden inline-flex items-center justify-center rounded-lg border border-white/10 px-3 py-2 text-white shrink-0"
@@ -76,7 +76,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Menu déroulant mobile */}
+      {/* MENU MOBILE */}
       <AnimatePresence>
         {open && (
           <motion.div

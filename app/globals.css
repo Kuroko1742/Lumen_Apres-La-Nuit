@@ -1,10 +1,12 @@
 @import "tailwindcss";
 
+/* =========================
+   Variables globales
+   ========================= */
 :root {
   --background: #0a0a0a;
   --foreground: #000000;
 }
-
 
 @theme inline {
   --color-background: var(--background);
@@ -20,37 +22,40 @@
   }
 }
 
+/* =========================
+   Base
+   ========================= */
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  h1, h2, h3, h4 {
+}
+
+/* Titres */
+h1, h2, h3, h4 {
   color: #ffffff;
 }
 
 /* =========================
-   FIX MOBILE (ne touche pas au PC)
+   MOBILE FIX (ne touche PAS le PC)
    ========================= */
 @media (max-width: 768px) {
 
-  /* Empêche le site de déborder sur les côtés */
   html, body {
     overflow-x: hidden;
   }
 
-  /* Donne de l'air sur mobile */
   main {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  /* Logo (évite qu'il soit énorme sur mobile) */
+  /* Images jamais géantes */
   img {
     max-width: 100%;
     height: auto;
   }
 
-  /* Titres trop grands sur mobile */
   h1 {
     font-size: 32px;
     line-height: 1.1;
@@ -61,13 +66,22 @@ body {
     line-height: 1.2;
   }
 
-  /* Paragraphes lisibles */
   p {
     font-size: 16px;
     line-height: 1.5;
   }
 }
 
+/* =========================
+   LOGO NAVBAR (clé du problème)
+   ========================= */
+.navbar-logo {
+  height: 32px; /* PC */
+  width: auto;
+}
 
-
+@media (max-width: 768px) {
+  .navbar-logo {
+    height: 18px; /* MOBILE */
+  }
 }
