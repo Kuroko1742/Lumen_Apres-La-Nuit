@@ -25,20 +25,19 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-white/10 bg-black/80 backdrop-blur">
       <div className="flex items-center justify-between px-6 py-4">
-        {/* Logo / Titre */}
-        <Link href="/" className="flex items-center gap-3 text-white">
+        {/* Logo + Titre (mobile petit / PC normal) */}
+        <Link href="/" className="flex items-center gap-2 text-white">
           <img
             src="/Logo/logo.png"
             alt="LUMEN : Après la nuit"
-            className="h-8 w-auto transition-transform duration-300 hover:scale-105"
+            className="h-6 md:h-8 w-auto transition-transform duration-300 hover:scale-105"
           />
-          {/* Le titre reste sur PC, mais sur mobile on le cache pour gagner de la place */}
-          <span className="hidden md:block text-lg font-semibold">
+          <span className="text-xs md:text-lg font-semibold whitespace-nowrap">
             LUMEN : Après la nuit
           </span>
         </Link>
 
-        {/* DESKTOP (inchangé) */}
+        {/* DESKTOP (comme avant) */}
         <div className="hidden md:flex gap-6 text-sm">
           {links.map((link) => {
             const isActive =
@@ -67,7 +66,7 @@ export default function Navbar() {
           })}
         </div>
 
-        {/* MOBILE (menu burger) */}
+        {/* MOBILE (burger) */}
         <button
           onClick={() => setOpen((v) => !v)}
           className="md:hidden inline-flex items-center justify-center rounded-lg border border-white/10 px-3 py-2 text-white"
@@ -77,7 +76,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Dropdown mobile */}
+      {/* Menu déroulant mobile */}
       <AnimatePresence>
         {open && (
           <motion.div
