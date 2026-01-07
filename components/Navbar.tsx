@@ -17,27 +17,27 @@ export default function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
-  // Ferme le menu quand tu changes de page
   useEffect(() => {
     setOpen(false);
   }, [pathname]);
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-white/10 bg-black/80 backdrop-blur">
-      <div className="flex items-center justify-between px-6 py-4">
-        {/* Logo + Titre (mobile petit / PC normal) */}
-        <Link href="/" className="flex items-center gap-2 text-white">
+      <div className="flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4">
+        {/* GAUCHE : Logo + Titre (ne déborde jamais sur le burger) */}
+        <Link href="/" className="flex items-center gap-2 text-white min-w-0">
           <img
             src="/Logo/logo.png"
             alt="LUMEN : Après la nuit"
-            className="h-6 md:h-8 w-auto transition-transform duration-300 hover:scale-105"
+            className="h-[18px] md:h-8 w-auto shrink-0 transition-transform duration-300 hover:scale-105"
           />
-          <span className="text-xs md:text-lg font-semibold whitespace-nowrap">
+
+          <span className="text-[10px] sm:text-xs md:text-lg font-semibold truncate">
             LUMEN : Après la nuit
           </span>
         </Link>
 
-        {/* DESKTOP (comme avant) */}
+        {/* DESKTOP : liens (inchangé) */}
         <div className="hidden md:flex gap-6 text-sm">
           {links.map((link) => {
             const isActive =
@@ -66,10 +66,10 @@ export default function Navbar() {
           })}
         </div>
 
-        {/* MOBILE (burger) */}
+        {/* MOBILE : burger */}
         <button
           onClick={() => setOpen((v) => !v)}
-          className="md:hidden inline-flex items-center justify-center rounded-lg border border-white/10 px-3 py-2 text-white"
+          className="md:hidden inline-flex items-center justify-center rounded-lg border border-white/10 px-3 py-2 text-white shrink-0"
           aria-label="Ouvrir le menu"
         >
           {open ? "✕" : "☰"}
@@ -85,7 +85,7 @@ export default function Navbar() {
             exit={{ height: 0, opacity: 0 }}
             className="md:hidden overflow-hidden border-t border-white/10 bg-black/80 backdrop-blur"
           >
-            <div className="flex flex-col px-6 py-4 gap-3">
+            <div className="flex flex-col px-4 sm:px-6 py-4 gap-3">
               {links.map((link) => {
                 const isActive =
                   link.href === "/"
