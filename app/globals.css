@@ -31,6 +31,86 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* =========================
+   Ambiance lumière / ombre
+   ========================= */
+.light-sweep,
+.shadow-drift {
+  position: absolute;
+  inset: -20% -10%;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.light-sweep {
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(140, 190, 255, 0.18),
+    rgba(10, 10, 10, 0) 65%
+  );
+  mix-blend-mode: screen;
+  animation: sweepLight 18s ease-in-out infinite;
+}
+
+.light-sweep--one {
+  transform: translate3d(-15%, -10%, 0);
+  animation-duration: 22s;
+}
+
+.light-sweep--two {
+  transform: translate3d(10%, 20%, 0);
+  animation-delay: -6s;
+  animation-duration: 26s;
+  opacity: 0.25;
+}
+
+.shadow-drift {
+  background: radial-gradient(
+    circle at 45% 45%,
+    rgba(10, 10, 10, 0.75),
+    rgba(10, 10, 10, 0) 70%
+  );
+  mix-blend-mode: multiply;
+  animation: driftShadow 24s ease-in-out infinite;
+}
+
+.shadow-drift--one {
+  transform: translate3d(0, 15%, 0);
+  animation-duration: 28s;
+  opacity: 0.5;
+}
+
+.shadow-drift--two {
+  transform: translate3d(-10%, -5%, 0);
+  animation-delay: -8s;
+  animation-duration: 32s;
+  opacity: 0.4;
+}
+
+@keyframes sweepLight {
+  0% {
+    transform: translate3d(-12%, -8%, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(12%, 10%, 0) scale(1.05);
+  }
+  100% {
+    transform: translate3d(-12%, -8%, 0) scale(1);
+  }
+}
+
+@keyframes driftShadow {
+  0% {
+    transform: translate3d(8%, 12%, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-8%, -10%, 0) scale(1.08);
+  }
+  100% {
+    transform: translate3d(8%, 12%, 0) scale(1);
+  }
+}
+
 /* Titres */
 h1, h2, h3, h4 {
   color: #ffffff;
